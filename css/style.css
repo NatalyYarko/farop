@@ -11,14 +11,31 @@
   position: relative;
   width: 100%;
   min-height: 390px;
-  margin-bottom: 156px;
-  background-image: url("../img/layer-7.jpg"); }
-  .hero:after {
+  margin-bottom: 156px; }
+  .hero .img {
+    width: 100%;
+    height: 100%;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-image: url("../img/layer-7.jpg"); }
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
     opacity: 0.96;
     background-color: #24282f; }
   .hero header {
     width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
     background-color: #24282f;
     padding: 0; }
     .hero header .container-hero {
@@ -47,7 +64,8 @@
         text-transform: uppercase; }
         .hero header .container-hero .navigation ul li {
           display: inline-flex;
-          list-style: none; }
+          list-style: none;
+          flex-direction: row; }
           .hero header .container-hero .navigation ul li a {
             color: #ffffff;
             text-decoration: none;
@@ -61,19 +79,23 @@
   .hero .container-hero {
     max-width: 1300px;
     margin: auto; }
-    .hero .container-hero h1 {
-      font-family: Raleway, sans-serif;
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 55px;
-      color: #ffffff;
-      text-transform: uppercase; }
-    .hero .container-hero p {
-      font-family: Open-Sans, sans-serif;
-      font-size: 12px;
-      line-height: 24px;
-      color: #ffffff;
-      width: 50%; }
+    .hero .container-hero .hero-content {
+      position: absolute;
+      top: 45%;
+      z-index: 3; }
+      .hero .container-hero .hero-content h1 {
+        font-family: Raleway, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 55px;
+        color: #ffffff;
+        text-transform: uppercase; }
+      .hero .container-hero .hero-content p {
+        font-family: Open-Sans, sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        color: #ffffff;
+        width: 50%; }
 
 .managment {
   margin-bottom: 0; }
