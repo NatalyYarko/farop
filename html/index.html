@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-2.2.1.js"
+            integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc="
+            crossorigin="anonymous"></script>
+    <script src="../script/owl.carousel.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -46,15 +58,14 @@
             to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials
             and a beautiful.</p>
     </div>
+
 </div>
 
-<div class="container-main">
-    <section class="managment">
-            <h2>Management</h2>
 
-        <div class="border">
-
-        </div>
+<section class="managment">
+    <div class="container-main">
+        <h2>Management</h2>
+        <div class="border"></div>
         <div class="team">
             <div class="team-1">
                 <div class="team-photo">
@@ -65,9 +76,9 @@
                         <p>Marketing Manager</p>
                     </div>
                     <div class="social-links">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
                     </div>
                 </div>
             </div>
@@ -80,9 +91,9 @@
                         <p>Finance Manager</p>
                     </div>
                     <div class="social-links">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
                     </div>
                 </div>
             </div>
@@ -95,36 +106,102 @@
                         <p>Creative Director</p>
                     </div>
                     <div class="social-links">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="button-show-all"></div>
-    </section>
-    <section class="testimonials">
+        <div class="button-show-all">
+            <a href="#">
+                Show All
+            </a>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <div class="container-main">
         <h2>WHAT OUR CLIENTS SAY</h2>
-        <div class="courosel">
+        <div class="border"></div>
+        <div class="carousel">
+            <div class="owl-carousel">
+                <div>
+                    <div class="client-photo">
+                        <img src="../img/layer-23.jpg"/>
+                    </div>
+                    <p class="text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna.
+                        Vivamus ullamcorper
+                        mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+                    <p class="name"> Larry Jane</p>
+                    <p class="seat">General Manager</p>
+                </div>
+                <div>
+                    <div class="client-photo">
+                        <img src="../img/layer-23.jpg"/>
+                    </div>
+                    <p class="text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna.
+                        Vivamus ullamcorper
+                        mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+                    <p class="name"> Larry Jane</p>
+                    <p class="seat">General Manager</p>
+                </div>
+                <div>
+                    <div class="client-photo">
+                        <img src="../img/layer-23.jpg"/>
+                    </div>
+                    <p class="text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna.
+                        Vivamus ullamcorper
+                        mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+                    <p class="name"> Larry Jane</p>
+                    <p class="seat">General Manager</p>
+                </div>
+            </div>
             <div class="client-photo"></div>
-            <p>Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper
-                mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
             <div class="client-name"></div>
             <div class="client-position"></div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
 <footer>
     <div class="container-main">
-        <div class="about-farop"></div>
-        <div class="contacts"></div>
+        <div class="about-farop">
+            <h6>ABOUT FAPOR</h6>
+            <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with
+                clients to fulfil their design needs. Whether you need to create a brand from scratch, including
+                marketing materials and a beautiful.</p>
+        </div>
+        <div class="contacts">
+            <h6>Contact INFO</h6>
+            <p>PO Box 17122 Nollins Street
+                5034 Los Angelos</p>
+
+            <p>Phone: 1800555.0658
+                Email: support@fapor.com
+                Web: fapor.com</p>
+        </div>
         <div class="subscribe-form">
             <form action="#">
-                <label for="sub"></label>
-                <input id="sub" type="text">
-                <button></button>
+                <h6>Subscribe to our newsletter</h6>
+                <input type="text" placeholder="Enter your email address1">
+                <button>
+                    SUBSCRIBLE NOW
+                </button>
             </form>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container-main">
+            <div class="privacy">
+                <p>© 2016  Fapor by Respotheme</p>
+            </div>
+            <div class="links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
         </div>
     </div>
 </footer>
